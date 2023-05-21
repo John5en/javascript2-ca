@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noroff Forum</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
   <body>
@@ -28,37 +28,39 @@
             <a class="nav-link" href="posts.html">Posts</a>
           </li>
         </ul>
-        <button
-          id="logoutButton"
-          class="btn btn-outline-primary my-2 my-lg-0"
-          style="display: none"
-        >
-          Log Out
-        </button>
       </div>
     </nav>
-    <h1>Log in</h1>
+    <h1>Register</h1>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form class="login-form">
+          <form id="registrationForm" class="register-form">
             <div class="form-group">
-              <label for="username">Email</label>
+              <label for="username">Username</label>
               <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" />
             </div>
             <div class="form-group">
               <label for="password">Password</label>
               <input type="password" class="form-control" id="password" />
             </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
+            <button type="submit" class="btn btn-primary">Register</button>
             <p class="register-text">
-              Don't have an account? <a href="register.html">Register here</a>
+              Already have an account? <a href="index.html">Log in here</a>
             </p>
           </form>
+          <div
+            id="successMessage"
+            class="alert alert-success"
+            style="display: none"
+          ></div>
         </div>
       </div>
     </div>
-    <script type="module" src="js/login.js"></script>
-    <script type="module" src="js/script.js"></script>
+
+    <script type="module" src="js/register.js"></script>
   </body>
 </html>
