@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Noroff Forum</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="posts.html">Posts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Register</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="registrationForm" class="register-form">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <p class="register-text">
+              Already have an account? <a href="index.html">Log in here</a>
+            </p>
+          </form>
+          <div
+            id="successMessage"
+            class="alert alert-success"
+            style="display: none"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/register.js"></script>
+  </body>
+</html>
